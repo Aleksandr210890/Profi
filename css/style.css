@@ -1,0 +1,560 @@
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.conteiner {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #e8eaffba;
+}
+
+.header__body{
+    flex: 1 1 auto;
+}
+
+
+/***************************/
+.header__top {
+    margin-top: 20px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav__item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__list {
+    margin-right: 45px;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.nav__list:last-child {
+    margin-right: 0px;
+}
+
+
+.item__link:hover {
+    color: red;
+    opacity: .4;
+}
+
+.item__link-god {
+    font-weight: 800;
+    font-size: 18px;
+    position: relative;
+}
+
+.item__link-god::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: -5px;
+    left: -35px;
+    background: url(../img/taym.png) 0 0 / 100% no-repeat;
+    width: 25px;
+    height: 25px;
+}
+
+
+.info__kontakt {
+    display: flex;
+    flex-direction: column;
+    font-weight: 900;
+    font-size: 18px;
+
+}
+
+.kontakt__tel {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.kontakt__tel,
+.kontakt__mail {
+    margin-left: 25px;
+}
+.kontakt__mail {
+    position: relative;
+}
+
+.kontakt__tel::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: -2px;
+    left: -30px;
+    background: url(../social/iPhone.svg) 0 0 / 100% no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.kontakt__mail::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: -2px;
+    left: -30px;
+    background: url(../social/Chat.svg) 0 0 / 100% no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+/*------------------header body--------------*/
+/*------------------header body--------------*/
+
+
+
+.body__inner {
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    margin: auto 0px;
+}
+
+
+
+.centr{
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+}
+
+.title__title-osnova {
+    position: relative;
+    margin: 0px 0px 50px 15px;
+}
+
+.bodi__title {
+    font-weight: 900;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.bodi__text1::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 94px;
+    left: -30px;
+    background: url(../svg/strelcaok.svg)0 0 / 100% no-repeat;
+    width: 24px;
+    height: 24px;
+}
+
+.bodi__text2::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 138px;
+    left: -30px;
+    background: url(../svg/strelcaok.svg)0 0 / 100% no-repeat;
+    width: 24px;
+    height: 24px;
+}
+
+.bodi__text3::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 178px;
+    left: -30px;
+    background: url(../svg/strelcaok.svg)0 0 / 100% no-repeat;
+    width: 24px;
+    height: 24px;
+}
+
+.bodi__text1 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 100%;
+    margin-bottom: 20px;
+}
+
+.bodi__text2 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 100%;
+    margin-bottom: 15px;
+}
+
+.bodi__text3 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 100%;
+    margin-bottom: 20px;
+}
+
+.bodi__text:last-child {
+    margin-bottom: 0px;
+}
+
+.knopca__btn {
+    display: inline-block;
+    padding: 5px;
+    
+}
+
+.button {
+    font-weight: 700;
+    font-size: 25px;
+    padding: 10px 15px;
+    background-color: blue;
+    opacity: 0.6;
+    color: white;
+    border-radius: 15px;
+    border: 1px solid rgb(14, 13, 13);
+}
+
+
+
+.button:hover {
+    background-color: transparent;
+    color: green;
+}
+
+
+/*----------------------------------------*/
+
+
+.blog__animatiom{
+    position: relative;
+    width: 100px;
+}
+
+.anime img{
+    position: absolute;
+}
+
+.anime img{
+    animation: animme-bloc 3s infinite alternate;
+}
+
+@keyframes animme-bloc {
+    0%{
+        top: 0%;
+    }
+
+    100%{
+        top: calc(100% - 100px);
+    }
+}
+
+
+.blog__pricol{
+    position: relative;
+    width: 100px;
+}
+
+.anim img{
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid #000000;
+}
+
+.anim img{
+    animation: tr-blog 4s infinite alternate 1s;
+}
+
+@keyframes tr-blog {
+    0%{
+        top: 0%;
+    }
+
+    100%{
+        top: calc(100% - 100px);
+    }
+}
+
+.blog__ani {
+    position: relative;
+    width: 100px;
+}
+.an img{
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid #000000;
+}
+.an img{
+    animation:fri-blog 3s infinite alternate 2s ;
+}
+
+
+@keyframes fri-blog {
+    0%{
+        top: 0%;
+    }
+
+    100%{
+        top: calc(100% - 100px);
+    }
+}
+
+
+/*---------------main-------------------------*/
+
+
+.info__prays {
+    margin: 100px 0px;
+}
+
+.bodi__title-vtor {
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.prays__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prays__text {
+    max-width: 300px;
+    border: 1px solid #000000;
+    border-radius:  30px ;
+    background-color: #e8eaffba;
+}
+
+.prays__text:hover{
+    box-shadow: 0px 0px 6px 15px #e8eaffba;
+}
+
+.text__info {
+    margin-bottom: 50px;
+}
+
+.prays__foto img{
+    margin-left: 70px;
+}
+.text__info span{
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 100%;
+    margin: 0px 0px 25px 40%;
+}
+
+.text__title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    text-align: center;
+    margin: 30px;
+}
+
+.opis {
+    font-weight: 700;
+    opacity: .6;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.opisanie {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.knopca__btn {
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+.button-btn{
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px 10px;
+    background-color: blue;
+    opacity: 0.6;
+    color: white;
+    border-radius: 40px;
+    border: 1px solid rgb(14, 13, 13);
+}
+.button-btn:hover{
+    background-color: transparent;
+    color: green;
+    opacity: 0.6;
+    
+}
+
+
+/*------------------footer---------------------*/
+
+
+.footer__footer {
+    background-color: #e8eaffba;
+}
+
+.info__kontakt{
+    margin-bottom: 10px;
+}
+.footer__bloga {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__logo {
+    margin-bottom: 20px;
+}
+
+
+
+/*---------------media-----------------------*/
+/*---------------media-----------------------*/
+
+@media (max-width: 1000px){
+    .prays__text{
+        margin: 0px 0px 25px 0px;
+    }
+    .prays__item{
+        flex-direction: column;
+    }
+    .button-btn{
+        padding: 10px 0px;
+    }
+    .knopca__btn{
+        margin-left: 50px;
+    }
+
+}
+@media (max-width: 900px){
+    .blog__animatiom {
+        display: none;
+    }
+    .blog__pricol{
+        display: none;
+    }
+    .blog__ani{
+        display: none;
+    }
+    
+    .header__inner{
+        flex-direction: column;
+    }
+    .header__logo{
+        margin-bottom: 45px;
+    }
+    .header__nav{
+        margin-bottom: 45px;
+    }
+    .item__link-god{
+        margin-bottom: 45px;
+    }
+
+    .inner__body{
+        margin-left: 150px;
+    }
+
+}
+@media (max-width: 750px){
+    .bodi__title{
+        font-size: 35px;
+        margin-bottom: 55px;
+    }
+
+}
+@media (max-width: 650px){
+    .inner__body{
+        margin-left: 0px;
+    }
+
+}
+@media (max-width: 600px){
+    .inner__body{
+        margin-left: 0px;
+    }
+
+}
+@media (max-width: 550px){
+    .footer__bloga {
+        flex-direction: column;
+    }
+}
+@media (max-width: 500px){
+    .bodi__title{
+        font-size: 25px;
+        margin-bottom: 77px;
+    }
+    .bodi__text1 {
+        font-size: 20px;
+    }
+    .bodi__text2 {
+        font-size: 20px;
+    }
+    .bodi__text3 {
+        font-size: 20px;
+    }
+}
+@media (max-width: 400px){
+    .prays__text{
+        max-width: 250px;
+    }
+    .prays__foto img {
+        margin-left: 50px;
+    }
+    .text__info span{
+        margin: 0px 0px 24px 35%;
+    }
+    .opisanie {
+        font-size: 14px;
+    }
+    .knopca__btn {
+        margin-left: 10%;
+    }
+}
+@media (max-width: 370px){
+    .bodi__title{
+        font-size: 20px;
+        margin-bottom: 53px;
+    }
+    .bodi__text1 {
+        font-size: 20px;
+    }
+    .bodi__text2 {
+        font-size: 20px;
+    }
+    .bodi__text3 {
+        font-size: 20px;
+    }
+    .bodi__text1::before {
+        top: 80px;
+    }
+    .bodi__text2::before {
+        top: 114px;
+    }
+    .bodi__text3::before {
+        top: 144px;
+    }
+}
+@media (max-width: 300px){
+    .knopca__btn {
+        margin-left: 4%;
+    }
+}
